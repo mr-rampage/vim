@@ -18,6 +18,9 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
 
+Plugin 'scrooloose/nerdtree'
+Plugin 'derekwyatt/vim-scala'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -36,3 +39,4 @@ set tabstop=2 shiftwidth=2 expandtab nu foldenable tw=80 formatoptions+=t wrap l
 syntax on
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 imap <C-Space> <C-X><C-O>
+map <C-n> :NERDTreeToggle<CR>
